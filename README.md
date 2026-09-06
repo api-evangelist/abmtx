@@ -1,4 +1,4 @@
-# Abmtx
+# ABM Therapeutics
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Abmtx is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/abmtx-stock
+ABM Therapeutics (ABM) is a clinical-stage biopharmaceutical company founded in 2015, operating from
+San Diego, California and Zhangjiang, Pudong, Shanghai. It discovers and develops small-molecule
+targeted therapies for primary brain cancers including glioblastoma multiforme (GBM) and for brain
+metastases arising from melanoma, lung cancer and breast cancer. Its lead program, ABM-1310, is a
+brain-penetrant, selective BRAF V600 inhibitor that received US IND clearance in November 2019 and is
+in Phase 1 clinical study.
+
+**No API surface.** ABM Therapeutics publishes no developer program, public API, SDK or
+machine-readable specification. Contract discovery was run against every host this record knows:
+every named `/.well-known/` path returns 404 on both `abmtx.com` and `www.abmtx.com`, no
+`api.`/`developer.`/`developers.`/`docs.` subdomain resolves, and neither host answers on HTTPS.
+See `well-known/abmtx-well-known.yml` for the full probe record and `apis.yml` `x-coverage` for the
+coverage disclosure.
+
+- Website: http://www.abmtx.com/
+- Secondary-market listing (third party, not operated by ABM): https://www.hiive.com/securities/abmtx-stock

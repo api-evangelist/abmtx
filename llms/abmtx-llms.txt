@@ -1,0 +1,61 @@
+# ABM Therapeutics
+
+> ABM Therapeutics (ABM) is a clinical-stage biopharmaceutical company founded in 2015,
+> operating from San Diego, California and Zhangjiang, Pudong, Shanghai. It discovers and
+> develops small-molecule targeted therapies for primary brain cancers including glioblastoma
+> multiforme (GBM) and for brain metastases arising from melanoma, lung cancer and breast
+> cancer. Its lead program ABM-1310 is a brain-penetrant, selective BRAF V600 inhibitor that
+> received US IND clearance in November 2019 and is in Phase 1 clinical study.
+
+generated: 2026-09-06
+method: generated
+source: apis.yml + http://www.abmtx.com/ (the provider publishes no llms.txt; http://www.abmtx.com/llms.txt returned 404)
+maintained-by: API Evangelist (https://apievangelist.com) — this is a third-party profile, not a document served by ABM Therapeutics
+
+## API surface
+
+ABM Therapeutics publishes **no public API**. There is no developer portal, no API reference, no
+OpenAPI/AsyncAPI/GraphQL/JSON Schema contract, no SDK or package, no MCP server, no A2A agent card
+and no webhook surface. Every named `/.well-known/` discovery path returns 404 on both `abmtx.com`
+and `www.abmtx.com`, and no `api.`, `developer.`, `developers.` or `docs.` subdomain resolves.
+This is a research-stage pharmaceutical company; software is not its product. An agent should not
+expect a callable surface here.
+
+## Company
+
+- [Home](http://www.abmtx.com/): corporate site (HTTP only — the host does not answer on HTTPS)
+- [Company overview](http://www.abmtx.com/site/company): founding, focus, brain-medicine R&D platform
+- [Mission](http://www.abmtx.com/site/mission)
+- [Management](http://www.abmtx.com/site/management): leadership and scientific consultants
+- [Investors](http://www.abmtx.com/site/Investors)
+- [Contact](http://www.abmtx.com/site/contactus): contact@abmtx.com; San Diego, CA and Shanghai, China
+- [LinkedIn](https://www.linkedin.com/company/abm-therapeutics)
+
+## Research and development
+
+- [R&D strategy](http://www.abmtx.com/site/development2)
+- [R&D overview](http://www.abmtx.com/site/development3)
+- [Pipeline](http://www.abmtx.com/site/development4)
+- [Expanded access policy](http://www.abmtx.com/site/expand): ABM-1310 expanded access for a limited
+  number of US patients who have participated in ABM-1310 clinical trials
+- [Partnership](http://www.abmtx.com/site/partnership)
+
+## News
+
+- [News center](http://www.abmtx.com/site/newscenter)
+- [ABM-1310 Phase 1 interim results at ESMO 2024](http://www.abmtx.com/site/newsdetails/96) (2024-09-06)
+- [ABM Therapeutics at ASCO 2024](http://www.abmtx.com/site/newsdetails/95) (2024-05-28)
+- [Two AACR 2024 posters](http://www.abmtx.com/site/newsdetails/94) (2024-04-12)
+
+## Optional
+
+- [Secondary-market listing (Hiive)](https://www.hiive.com/securities/abmtx-stock): third-party
+  venue listing for pre-IPO ABM Therapeutics stock — the source that surfaced this company into the
+  API Evangelist harvest backlog. Not operated by ABM Therapeutics.
+
+## Notes for machine readers
+
+- `http://www.abmtx.com/site/Privacypolicy` and `http://www.abmtx.com/site/Legalclaim` return HTTP 200
+  but render an empty body — page chrome only, no policy text. They are not wired as PrivacyPolicy or
+  TermsOfService pointers because there is no document behind them.
+- The site serves HTTP only; TLS connections to port 443 are refused on both hosts.
